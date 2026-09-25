@@ -75,7 +75,7 @@ END $$;
 INSERT INTO public.site_content (id, data)
 VALUES (
   'main',
-  
+  $json$
 {
   "seo": {
     "title": "Ostra — Effortless operations for exceptional stays",
@@ -495,6 +495,6 @@ VALUES (
     ]
   }
 }
-::jsonb
+$json$::jsonb
 )
 ON CONFLICT (id) DO NOTHING;
