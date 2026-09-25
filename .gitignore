@@ -24,6 +24,10 @@
 # Vercel
 .vercel
 
-# TypeScript
+# TypeScript & Next
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
+.env*
+supabase/.temp/
